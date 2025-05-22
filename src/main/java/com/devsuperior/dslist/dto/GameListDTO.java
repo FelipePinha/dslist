@@ -3,13 +3,13 @@ package com.devsuperior.dslist.dto;
 import com.devsuperior.dslist.entities.GameList;
 import org.springframework.beans.BeanUtils;
 
-public class ListDTO {
+public class GameListDTO {
     private long id;
     private String name;
 
-    public ListDTO() {}
+    public GameListDTO() {}
 
-    public ListDTO(GameList entity) {
+    public GameListDTO(GameList entity) {
         BeanUtils.copyProperties(entity, this);
     }
 
